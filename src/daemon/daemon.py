@@ -18,15 +18,15 @@ class RlDaemon:
 
         # Conversion from radioNum to user location name
         self._nodes = {1: "West Stairwell", 2: "East Stairwell"}  # MAKE SURE TO EDIT THIS IF CONFIGURATION CHANGES
+        self._detector_checkin_delta = {}  # Lookup table of time between pings for each detector
 
         for i in self._nodes:
-            # Time between pings
             self._detector_checkin_delta[i] = time.time()
 
     def run(self):
         while True:
             in_byte = self._arduino.read()[0]  # Read the incoming serial byte
-            movement = in_byte & 0b1  # Retrieve movment status
+            movement = in_byte & 0b1  # Retrieve movement status
             radioNum = (in_byte & 0b110) >> 1  # Retrieve radioNum
 
             if movement:

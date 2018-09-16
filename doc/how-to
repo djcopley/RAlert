@@ -1,0 +1,7 @@
+I mean it's pretty straight forward.
+
+1. Configure radio numbers for the arduinos and configure serial options for the daemon
+2. Flash the receiver sketch to the receiver
+3. Flash the detector sketch to the detectors
+5. Run the daemon on your host computer
+6. Stay one step ahead of Resident Assistants
