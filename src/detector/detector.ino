@@ -12,7 +12,7 @@
 /****************** User Config *****************/
 /***      Set this radio as number 1, 2       ***/
 short radioNumber = 1;
-byte addresses[][6] = {"1Node", "2Node", "3Node"};  // Node2 = W Corridor : Node3 = E Corridor
+byte addresses[][6] = {"1Node", "2Node", "3Node"};  // 2Node = W Corridor : 3Node = E Corridor
 /************************************************/
 
 /* Hardware configuration: Set up nRF24L01 radio on SPI bus plus pins 7 & 8 */
