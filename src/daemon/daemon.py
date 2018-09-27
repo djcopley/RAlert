@@ -32,7 +32,7 @@ class RlDaemon:
 
             if movement:
                 print(f"Movement detected - {self._nodes[radioNum]}")
-                os.system("osascript ../../scripts/kill_music.scpt")
+                os.system("osascript ../scripts/kill_music.scpt")
 
             else:
                 try:
