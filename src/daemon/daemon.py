@@ -52,7 +52,7 @@ if __name__ == '__main__':
         # Node3 = E Corridor
 
         print("RaLert Daemon Started")
-        arduino = serial.Serial(port="/dev/cu.usbmodem1431", baudrate=115200)
+        arduino = serial.Serial(port="/dev/cu.usbmodem14301", baudrate=115200)
         daemon = RlDaemon(arduino)
         daemon.run()
 
